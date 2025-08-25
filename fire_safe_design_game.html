@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Fire-Safe Landscape Design Game&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body { font-family: Arial, sans-serif; margin: 0; display: flex; height: 100vh; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>#toolbox { width: 150px; background: #f4f4f4; padding: 10px; border-right: 2px solid #ccc; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>#toolbox h3 { text-align: center; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tool { margin: 10px auto; padding: 10px; text-align: center; cursor: grab; border: 1px solid #aaa; border-radius: 6px; background: #fff; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>#yard { flex: 1; position: relative; background: #c6e2b5; display: flex; justify-content: center; align-items: center; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>#house { width: 120px; height: 120px; background: #ffcc66; border: 3px solid #444; text-align: center; line-height: 120px; font-weight: bold; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.item { position: absolute; width: 40px; height: 40px; text-align: center; line-height: 40px; border-radius: 50%; cursor: grab; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tree { background: green; color: white; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.shrub { background: darkgreen; color: white; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.gravel { background: gray; color: white; border-radius: 6px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.water { background: blue; color: white; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.firebreak { background: black; color: white; border-radius: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.shed { background: brown; color: white; border-radius: 4px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>#controls { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>button { padding: 8px 16px; font-size: 16px; cursor: pointer; border-radius: 6px; border: none; background: #444; color: white; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>#result { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); font-size: 18px; background: rgba(255,255,255,0.9); padding: 5px 15px; border-radius: 6px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="toolbox"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Toolbox&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tool" draggable="true" data-type="tree"&gt;🌲 Tree&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tool" draggable="true" data-type="shrub"&gt;🌿 Shrub&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tool" draggable="true" data-type="gravel"&gt;🪨 Gravel&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tool" draggable="true" data-type="water"&gt;💧 Water&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tool" draggable="true" data-type="firebreak"&gt;⬛ Firebreak&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tool" draggable="true" data-type="shed"&gt;🏠 Shed&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="yard"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="house"&gt;HOUSE&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="controls"&gt;&lt;button onclick="evaluateDesign()"&gt;Evaluate&lt;/button&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="result"&gt;Score: 0&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const yard = document.getElementById("yard");</p>
+</body>
+</html>
